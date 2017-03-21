@@ -5,8 +5,8 @@
 #       Released under GPL v2.
 #       Author : Josh Pellerin
 #
-# VERSION: 1.8
-# January 18, 2017
+# VERSION: 1.9
+# February 2, 2017
 # 
 # THIS IS A SAMPLE. VENDORS MAY CUSTOMIZE THIS SCRIPT IF THEY
 # WISH OR USE THIS SCRIPT TO CALL THEIR OWN SCRIPT. IT IS THEIR
@@ -56,7 +56,7 @@ INSTALL_OPTIONS=("$@")      #$@ grabs all parameters used when script was execut
 echo $@
 
 # RPM_FLAG will contain the parameters for the 'rpm' command
-RPM_FLAG="${INSTALL_OPTIONS}"
+RPM_FLAG="${INSTALL_OPTIONS[@]}"
 
 #####################################
 #	...setup work done
